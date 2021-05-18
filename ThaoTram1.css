@@ -1,0 +1,379 @@
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+#wrapper{
+	width: 100%;
+	position: relative;
+	height: 2000px;
+}
+.noidung{
+	width: 100%;
+	position: absolute;
+	z-index: 20;
+/*	background: #000000;*/
+}
+.header-main{
+	display: flex;
+	position: fixed;
+	background: #000000;
+	z-index: 10;
+	width: 100%;
+}
+.logo img{
+	width: 100%;
+	height: 100px;
+	margin-left:20px;
+	z-index: 50;
+}
+nav{
+	width: 100%;
+	height: 100px;
+	transition: 0.5s;
+}
+nav ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+nav ul li{
+	padding: fixed;
+	margin: 40px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	font-family: helvetica;
+}
+.search input{
+	width: 220px;
+	height: 45px;
+	border: 1px solid black;
+	border-radius: 50px;
+	font-size: 20px;
+	padding-left: 20px;
+}
+.content-bn{
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	top: 15%;
+	text-align: center;
+	line-height: 60px;
+}
+.content-bn h3{
+	letter-spacing:20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 50px;
+	margin-top: -390px;
+	animation: doi-mau-chu 3s infinite alternate;
+}
+.ava content-bn h3:hover{
+	color:#0AF3FF;
+	transition: 2s;
+}
+@keyframes doi-mau-chu{
+	0%{
+		background:#FC9B9C;
+	}
+	30%{
+		background:#6091F4;
+	}
+	60%{
+		background:#FDE85A;
+	}
+	100%{
+		background:#6BCC57;
+	}
+}
+.content-bn a{
+	padding: 10px 20px;
+	text-decoration: none;
+	color:#8B0002;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	word-spacing: 10px;
+	border: 3px solid #000000;
+	border-radius: 5px;
+	transition-duration: 0.3s;
+}
+.content-bn a:hover{
+	background:#ECD500;
+}
+#services{
+	width: 100%;
+	height: 100vh;
+	background: #fafafa;
+	padding-top: 170px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sv-content{
+	width: 1155px;
+	height: 600px;
+	margin: 0 auto;
+}
+.sv-title{
+	position: relative;
+	width: 100px;
+	height: 200px;
+	margin: 0 auto; 
+	text-align: center; 
+	text-transform: uppercase;
+}
+.sv-title h1{
+	position: absolute;
+	font-size: 40px;
+	color:#FFEE5A;
+    font-weight: bold;
+	z-index: 1;
+	right:-15px;
+	top:120px;
+	letter-spacing: 5px;
+}
+.sv-title h2{
+	position: absolute;
+	font-size: 40px;
+	color:#493B01;
+	letter-spacing: 5px;
+    font-weight: bold;
+	z-index: 2;
+	top:120px;
+	right: -20px;
+}
+.sv-content .sv-colums{
+	width: 350px;
+	height: 360px;
+	float: left;
+	margin-top:65px;
+	margin-left: 12px;
+	text-align: center;
+	transition: 0.5s
+}
+.sv-content .sv-colums:hover{
+    background:#FFCCF8;
+	border-radius: 7px;
+	margin-left: 20px;
+}
+.sv-content .sv-colums:hover img{
+    filter: sepia(100%); 
+}
+.sv-content .sv-colums:hover h1{
+	color: white;
+}
+.sv-content .sv-colums:hover p{
+	color: white;
+}
+.sv-content .sv-colums:hover .sv-border{
+	border-color: white;
+}
+.sv-colums h1{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 18px;
+	color: #222222;
+	text-transform: uppercase;
+}
+.sv-colums p{
+	margin-top: 25px;
+	font-size: 15px;
+	color: #777777;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.sv-colums img{
+	height: 200px;
+}
+.ps{
+	width: 40px;
+	border: 2px solid #630001;
+	border-radius: 4px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.thanhcuoi {
+	font-size: 25px;
+	text-align: center;
+	color:#000000;
+	margin-top: 50px;
+	animation: doi-mau 3s infinite alternate;
+}@keyframes doi-mau{
+	0%{
+		background:#FC9B9C;
+	}
+	30%{
+		background:#6091F4;
+	}
+	60%{
+		background:#FDE85A;
+	}
+	100%{
+		background:#6BCC57;
+	}
+}
+.nvnew{
+	margin-right: 50px;
+}
+.sv-titlee{
+	position: relative;
+	width: 100px;
+	height: 200px;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+}
+.sv-titlee h1{
+	font-size: 40px;
+	color:#FFCCF8;
+    font-weight: bold;
+	position: absolute;
+	right:-115px;
+	top:50px;
+	letter-spacing: 5px;
+}
+.sv-titlee h2{
+	font-size: 40px;
+	color:#640064;
+	letter-spacing: 5px;
+    font-weight: bold;
+	position: absolute;
+	z-index: 1;
+	top:50px;
+	right: -120px;
+}
+.pr-contentt img{
+	height:250px;
+	margin-left: 180px;
+	margin-top:30px;
+	animation: nhapnho 1.5s infinite linear;
+}
+
+.link {
+	text-align: center;
+}
+@keyframes nhapnho{
+	from{
+		transform: translateY(0);
+	}
+	to{
+		transform: translateY(10px);
+	}
+}
+.nvneww{
+	margin-right: 50px;
+}
+.sv-titleee{
+	position: relative;
+	width: 100px;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 40px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.sv-titleee h1{
+	font-size: 40px;
+	color:#CF9697;
+    font-weight: bold;
+	position: absolute;
+	right:-115px;
+	top:50px;
+	letter-spacing: 5px;
+}
+.sv-titleee h2{
+	font-size: 40px;
+	color:#7C0002;
+	letter-spacing: 5px;
+    font-weight: bold;
+	position: absolute;
+	z-index: 1;
+	top:50px;
+	right: -120px;
+}
+.pr-contenttt img{
+	height:250px;
+	margin-left: 130px;
+	margin-top:30px;
+}
+.spnew{
+	margin-right: 50px;
+}
+.sv-titl{
+	position: relative;
+	width: 100px;
+	height: 200px;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+}
+.sv-titl h1{
+	font-size: 40px;
+	color:aqua;
+    font-weight: bold;
+	position: absolute;
+	right:-115px;
+	top:50px;
+	letter-spacing: 5px;
+}
+.sv-titl h2{
+	font-size: 40px;
+	color:#0200FF;
+	letter-spacing: 5px;
+    font-weight: bold;
+	position: absolute;
+	z-index: 1;
+	top:50px;
+	right: -120px;
+}
+.pr-conten img{
+	height:250px;
+	margin-left: 150px;
+	margin-top:50px;
+	animation: chay 4s infinite alternate;
+	overflow: hidden;
+}
+@keyframes chay{
+	0%{
+		transform: translateX(0)
+	}
+	100%{
+		transform: translateX(1000px)
+	}
+}
+.fa {
+    padding: 25px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-right: 20px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
